@@ -26,8 +26,12 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:25.1.1'
-    compile 'com.android.support:design:25.1.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
 
-    // TODO add testCompile dependencies
+    // TODO add testCompile JUnit
+
+    // TODO add testCompile Mockito
+
+    // TODO add testCompile AssertJ
 }
