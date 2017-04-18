@@ -23,9 +23,7 @@ public class BookActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO set result to book name in intent
-
                 // TODO finish current activity
-
             }
         });
     }
