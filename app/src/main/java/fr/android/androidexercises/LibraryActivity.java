@@ -24,14 +24,12 @@ public class LibraryActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         // TODO save check box state
-
         super.onSaveInstanceState(outState);
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-
         // TODO restore check box
     }
 
