@@ -1,11 +1,13 @@
 package fr.android.androidexercises;
 
-public class Book {
+// TODO use parcel
+
+class Book {
 
     private String name;
     private String author;
 
-    public Book(String name, String author) {
+    Book(String name, String author) {
         this.name = name;
         this.author = author;
     }
@@ -14,7 +16,7 @@ public class Book {
         return name;
     }
 
-    public String getAuthor() {
+    String getAuthor() {
         return author;
     }
 }

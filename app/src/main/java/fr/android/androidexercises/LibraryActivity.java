@@ -26,7 +26,7 @@ public class LibraryActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LibraryActivity.this, BookActivity.class);
-                // Add book to intent
+                // TODO Add book to intent
                 startActivity(intent);
             }
         });
