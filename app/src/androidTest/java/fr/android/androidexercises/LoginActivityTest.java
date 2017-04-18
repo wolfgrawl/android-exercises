@@ -1,37 +1,27 @@
 package fr.android.androidexercises;
 
-import android.test.ActivityInstrumentationTestCase2;
+import android.support.test.espresso.Espresso;
+import android.support.test.espresso.action.ViewActions;
+import android.support.test.espresso.assertion.ViewAssertions;
+import android.support.test.espresso.matcher.ViewMatchers;
+import android.support.test.filters.LargeTest;
+import android.support.test.rule.ActivityTestRule;
+import android.support.test.runner.AndroidJUnit4;
 
-public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginActivity> {
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 
-    public LoginActivityTest() {
-        super(LoginActivity.class);
+@RunWith(AndroidJUnit4.class)
+@LargeTest
+public class LoginActivityTest {
+
+    @Rule
+    public ActivityTestRule<LoginActivity> activityRule =
+            new ActivityTestRule<>(LoginActivity.class);
+
+    @Test
+    public void shouldTryLoginAndSuccess() throws Exception {
+        // TODO test login
     }
-
-    @Override
-    public void setUp() throws Exception {
-        super.setUp();
-        //injectInstrumentation(InstrumentationRegistry.getInstrumentation());
-        getActivity();
-    }
-
-    public void takeScreenshot(String name) {
-        //Spoon.screenshot(getCurrentActivity(), name);
-    }
-
-//    public Activity getCurrentActivity() {
-//        Instrumentation instrumentation = InstrumentationRegistry.getInstrumentation();
-//        instrumentation.waitForIdleSync();
-//        final Activity[] activity = new Activity[1];
-//        instrumentation.runOnMainSync(new Runnable() {
-//            @Override
-//            public void run() {
-//                ActivityLifecycleMonitor activityLifecycleMonitor = ActivityLifecycleMonitorRegistry.getInstance();
-//                java.util.Collection<Activity> resumedActivities = activityLifecycleMonitor.getActivitiesInStage(Stage.RESUMED);
-//                activity[0] = Iterables.getOnlyElement(resumedActivities);
-//            }
-//        });
-//        return activity[0];
-//    }
-
 }
