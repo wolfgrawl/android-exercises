@@ -18,22 +18,22 @@ public class BookAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        // TODO
+        return 0; // TODO
     }
 
     @Override
     public Book getItem(int position) {
-        // TODO
+        return null; // TODO
     }
 
     @Override
     public long getItemId(int position) {
-        // TODO
+        return 0; // TODO
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        // TODO
+        return null; // TODO
     }
 
 }
