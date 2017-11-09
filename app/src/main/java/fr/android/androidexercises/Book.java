@@ -1,6 +1,8 @@
 package fr.android.androidexercises;
 
-public class Book {
+import android.support.v7.widget.RecyclerView;
+
+public class Book extends RecyclerView.ViewHolder {
 
     public final String name;
     public final float price;
