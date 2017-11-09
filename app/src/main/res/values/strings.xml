@@ -3,6 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="action_open">Open</string>
     <string name="text_success">Book activity ;)</string>
-    <string name="toast_todo">TODO</string>
+    <string name="toast_todo">todo</string>
+    <string name="toast_done">done</string>
     <string name="action_send_name">Send back my name</string>
 </resources>
