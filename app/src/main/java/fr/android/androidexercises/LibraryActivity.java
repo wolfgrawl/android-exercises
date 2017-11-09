@@ -20,8 +20,8 @@ public class LibraryActivity extends AppCompatActivity {
 
         List<Book> books = getBooks();
 
-        ListView listView = findViewById(R.id.bookListView);
-        List.setAdapter(new BookAdapter(this, books));
+        ListView list = findViewById(R.id.bookListView);
+        list.setAdapter(new BookAdapter(this, books));
     }
 
     private List<Book> getBooks() {
