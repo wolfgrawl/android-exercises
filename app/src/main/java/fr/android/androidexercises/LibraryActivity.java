@@ -3,6 +3,7 @@ package fr.android.androidexercises;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import retrofit2.Retrofit;
 import timber.log.Timber;
 
 public class LibraryActivity extends AppCompatActivity {
@@ -14,6 +15,10 @@ public class LibraryActivity extends AppCompatActivity {
 
         // Plant logger cf. Android Timber
         Timber.plant(new Timber.DebugTree());
+
+        Retrofiit retrofit = new Retrofit.Builder().baseUrl("http://henri-potier.xebia.fr/").addConverterFactory(GsonConverterFactory.create()).build();
+
+        HenriPotierService service = retrofit.create(HenriPotierService.class);
 
         // TODO build Retrofit
 
