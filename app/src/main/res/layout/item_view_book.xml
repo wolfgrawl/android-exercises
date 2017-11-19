@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:orientation="horizontal"
+    android:layout_height="150dp"
+    android:orientation="vertical"
     android:padding="10dp">
 
     <ImageView
@@ -15,10 +15,10 @@
 
     <TextView
         android:id="@+id/titleTextView"
-        android:layout_width="0dp"
+        android:layout_width="1dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_weight="1"
-        tools:text="Henri Potier à l'école des sorciers"/>
+        tools:text="myTitle"/>
 
 </fr.android.androidexercises.BookItemView>

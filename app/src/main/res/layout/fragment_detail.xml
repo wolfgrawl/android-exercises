@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/titleDetailView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/coverDetailView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="400dp"
+                android:layout_weight="1.00"
+                android:layout_below="@+id/titleDetailView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/descriptionDetailView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:layout_below="@id/priceDetailView"/>
+
+            <TextView
+                android:id="@+id/priceDetailView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/isbnDetailVview"/>
+
+            <TextView
+                android:id="@+id/isbnDetailVview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/coverDetailView"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

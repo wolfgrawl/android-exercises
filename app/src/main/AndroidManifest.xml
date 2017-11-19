@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
-    package="fr.android.androidexercises"
+    package="fr.android.egourdeau"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:label="egourdApp"
+        android:theme="@style/AppTheme"
+        android:configChanges="orientation|screenSize">
         <activity
-            android:name=".LibraryActivity"
+            android:name="fr.android.egourdeau.activities.LibraryActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
             <intent-filter>
@@ -19,5 +23,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
